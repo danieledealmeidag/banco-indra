@@ -1,0 +1,35 @@
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="text-primary">
+              <th>Nome</th>
+              <th>CPF</th>
+          </thead>
+          <tbody>
+
+          <tr *ngFor="let info of lista">
+            <td>{{ info.nome }}</td>
+            <td>{{ info.cpf }}</td>
+
+            <!-- td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary btn-sm"
+                        [routerLink]="[perfil.id,'ver']">Detalhes</button>
+
+                <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <button class="dropdown-item" [routerLink]="[perfil.id+'/editar']">Editar</button>
+                  <button class="dropdown-item excluir" (click)="excluirPerfil(perfil.id)">Excluir</button>
+                </div>
+              </div>
+
+            </td -->
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>

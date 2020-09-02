@@ -1,0 +1,26 @@
+<div class="text-center">
+    <form  class="form-signin" #form="ngForm" (ngSubmit)="salvar(form.value)">
+      <h1 class="h3 mb-3 font-weight-normal">Acesse a sua Conta</h1>
+
+      <label for="agencia" class="sr-only">Agencia</label>
+      <input type="text" id="agencia" class="form-control" placeholder="Agencia" [(ngModel)]="agenciaF" name="agenciaF" autofocus>
+
+      <label for="conta" class="sr-only">Conta</label>
+      <input type="text" id="conta" class="form-control" placeholder="Conta" [(ngModel)]="contaF" name="contaF" >
+      <div class="checkbox mb-3">
+
+      </div>
+      <div class="row">
+
+          <div class="col-md-4">
+            <button class="btn btn-md btn-primary" type="submit">Entrar</button>
+          </div>
+          <div class="col-md-8">
+            <button class="btn btn-md btn-primary btn-block" [routerLink]="['/cadastro']">Abrir minha conta</button>
+          </div>
+
+      </div>
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+    </form>
+  </div>
